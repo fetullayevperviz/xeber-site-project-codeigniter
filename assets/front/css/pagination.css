@@ -1,0 +1,43 @@
+.pagination-section {
+  margin: 5rem 0;
+  display: grid;
+  place-items: center;
+}
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+}
+
+.pagination a {
+  text-decoration: none;
+  background: teal;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border: 1px solid teal;
+}
+
+.first a {
+  display: inline-block;
+  transition: all 300ms linear;
+}
+
+.second a {
+  background: #fff;
+  color: teal;
+}
+
+.second li:not(:last-of-type) a {
+  border-right-color: #fff;
+}
+
+.second a:hover {
+  background: teal;
+  color: #fff;
+  border-right-color: teal !important;
+}
+
+.third a:hover {
+  opacity: 1 !important;
+}
+
